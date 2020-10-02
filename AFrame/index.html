@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-moblie-web-app-capable" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>My first aframe</title>
+  </head>
+  <body bgcolor="black">
+    <a-scene>
+      <a-assets>
+        <video
+          id="video"
+          autoplay
+          loop="true"
+          src="./Video/snowvideo.mp4"
+          webkit-playinline
+        />
+      </a-assets>
+  
+      <a-videosphere
+        src="#video"
+        width="30"
+        height="30"
+        position="0 0 -15"
+        rotation="0 -90 0"
+      ></a-videosphere>
+
+      <a-sound src="./Audio/Wind.mp3" autoplay="true" position="0 2 5"></a-sound>
+      <a-cylinder
+        color="black"
+        height="0.5"
+        radius="0.2"
+        position="0 2.2 -4"
+      ></a-cylinder>
+
+      <a-sphere
+        color="black"
+        radius="0.07"
+        position="0.15 1.85 -3.7"
+      ></a-sphere>
+      <a-sphere
+        color="black"
+        radius="0.07"
+        position="-0.15 1.85 -3.7"
+      ></a-sphere>
+
+      <a-cone
+        color="red"
+        height="0.3"
+        radius-bottom="0.05"
+        rotation="90 0 0"
+        position="0 1.75 -3.6"
+      ></a-cone>
+
+      <a-sphere color="#D4D5D9" radius="0.8" position="0 0.7 -4"></a-sphere>
+      <a-sphere color="#D4D5D9" radius="0.4" position="0 1.75 -4"></a-sphere>
+
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="50"
+        height="50"
+        color="#D4D5D9"
+      ></a-plane>
+    </a-scene>
+  </body>
+</html>
